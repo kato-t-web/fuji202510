@@ -1,32 +1,47 @@
+/* ==========================================================================
+   Foundation
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 10px;
 }
-header {
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+.l-header {
     background-color: #000;
     color: #fff;
     width: 100vw;
 }
-.header-container {
+
+.l-header__inner {
     max-width: 119.6rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo h1 {
+
+/* ==========================================================================
+   Component
+   ========================================================================== */
+.c-logo h1 {
     font-size: 2rem;
 }
-nav ul {
+
+.c-nav__list {
     display: flex;
     gap: 4rem;
     list-style: none;
 }
-nav a {
+
+.c-nav__link {
     color: #fff;
     text-decoration: none;
 }
