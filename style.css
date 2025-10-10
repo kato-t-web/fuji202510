@@ -500,6 +500,7 @@ img {
     background-color: #000;
     color: #fff;
     width: 100vw;
+    font-family: "Noto Serif JP", serif;
 }
 
 .l-header__inner {
@@ -521,6 +522,7 @@ img {
    ========================================================================== */
 .c-logo h1 {
     font-size: 2rem;
+    font-family: "Noto Serif JP", serif;
 }
 
 .c-nav__list {
@@ -532,6 +534,7 @@ img {
 .c-nav__link {
     color: #fff;
     text-decoration: none;
+    font-family: "Noto Serif JP", serif;
 }
 
 .c-slider {
