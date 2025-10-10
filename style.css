@@ -512,9 +512,11 @@ img {
     max-width: 119.6rem;
     height: 100%;
     margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 6rem;
 }
 
 .l-mainvisual {
