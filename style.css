@@ -500,11 +500,17 @@ img {
     background-color: #000;
     color: #fff;
     width: 100vw;
+    height: 8rem;
     font-family: "Noto Serif JP", serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .l-header__inner {
     max-width: 119.6rem;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -515,6 +521,7 @@ img {
     width: 100vw;
     height: 50vw;
     overflow: hidden;
+    margin-top: 8rem;
 }
 
 /* ==========================================================================
@@ -535,6 +542,7 @@ img {
     color: #fff;
     text-decoration: none;
     font-family: "Noto Serif JP", serif;
+    font-size: 1.4rem;
 }
 
 .c-slider {
@@ -598,4 +606,94 @@ img {
 
 .c-slider__dot.is-active {
     opacity: 1;
+}
+
+/* News Section */
+.l-news {
+    width: 100vw;
+    padding: 8rem 0;
+}
+
+.l-news__inner {
+    max-width: 119.6rem;
+    margin: 0 auto;
+}
+
+.c-section-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.c-news {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.c-news__item {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    transition: opacity 0.3s;
+}
+
+.c-news__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5rem;
+    height: 0.1rem;
+    background-color: #000;
+}
+
+.c-news__item:hover {
+    opacity: 0.6;
+}
+
+.c-news__date {
+    font-size: 1.6rem;
+    color: #747474;
+    flex-shrink: 0;
+}
+
+.c-news__title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+}
+
+.c-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 37rem;
+    height: 8rem;
+    padding: 0 3rem;
+    background-color: #987A03;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto;
+    transition: opacity 0.3s;
+}
+
+.c-button:hover {
+    opacity: 0.6;
+}
+
+.c-button__text {
+    flex-grow: 1;
+}
+
+.c-button__arrow {
+    font-size: 2rem;
+    margin-left: 2rem;
 }
