@@ -1,48 +1,48 @@
-// ����_�
+// スライダー機能
 document.addEventListener('DOMContentLoaded', function() {
     const sliderItems = document.querySelectorAll('.c-slider__item');
     const dots = document.querySelectorAll('.c-slider__dot');
     let currentIndex = 0;
     let intervalId;
 
-    // �����H�p
+    // スライド切り替え関数
     function showSlide(index) {
-        // hfn���h���K� is-active �鹒Jd
+        // 全てのスライドとドットから is-active クラスを削除
         sliderItems.forEach(item => item.classList.remove('is-active'));
         dots.forEach(dot => dot.classList.remove('is-active'));
 
-        // �U�_���ï�n���h���k is-active �鹒��
+        // 指定されたインデックスのスライドとドットに is-active クラスを追加
         sliderItems[index].classList.add('is-active');
         dots[index].classList.add('is-active');
 
         currentIndex = index;
     }
 
-    // !n���x
+    // 次のスライドへ
     function nextSlide() {
         let nextIndex = (currentIndex + 1) % sliderItems.length;
         showSlide(nextIndex);
     }
 
-    // �Ս��
+    // 自動再生開始
     function startAutoPlay() {
-        intervalId = setInterval(nextSlide, 5000); // 5�Thk��H
+        intervalId = setInterval(nextSlide, 5000); // 5秒ごとに切り替え
     }
 
-    // �Ս\b
+    // 自動再生停止
     function stopAutoPlay() {
         clearInterval(intervalId);
     }
 
-    // ���ܿ�n��ï����
+    // ドットボタンのクリックイベント
     dots.forEach((dot, index) => {
         dot.addEventListener('click', function() {
             stopAutoPlay();
             showSlide(index);
-            startAutoPlay(); // ��ï��Ս���
+            startAutoPlay(); // クリック後、自動再生を再開
         });
     });
 
-    // �Ս��
+    // 初期化：自動再生開始
     startAutoPlay();
 });
