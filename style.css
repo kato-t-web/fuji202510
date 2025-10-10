@@ -28,6 +28,12 @@ html {
     align-items: center;
 }
 
+.l-mainvisual {
+    width: 100vw;
+    height: 50vw;
+    overflow: hidden;
+}
+
 /* ==========================================================================
    Component
    ========================================================================== */
@@ -44,4 +50,65 @@ html {
 .c-nav__link {
     color: #fff;
     text-decoration: none;
+}
+
+.c-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.c-slider__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.c-slider__item.is-active {
+    opacity: 1;
+}
+
+.c-slider__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-slider__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c9c9c9;
+    opacity: 0.4;
+}
+
+.c-slider__dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+}
+
+.c-slider__dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.c-slider__dot.is-active {
+    opacity: 1;
 }
