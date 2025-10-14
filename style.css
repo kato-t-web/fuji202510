@@ -655,7 +655,7 @@ img {
     display: block;
     width: 3rem;
     height: 3.4rem;
-    background-image: url('assets/images/img_concept.png');
+    background-image: url('assets/images/icon_concept');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -742,10 +742,72 @@ img {
     padding-top: 10.5rem;
     padding-bottom: 12.5rem;
     background-color: #FFFBF0;
+    overflow: visible;
 }
 
 .l-concept__inner {
     max-width: 119.6rem;
     margin: 0 auto;
     padding: 8rem 2rem;
+    overflow: visible;
+}
+
+.c-concept {
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.c-concept__row {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+.c-concept__row--reverse {
+    flex-direction: row-reverse;
+}
+
+.c-concept__text {
+    flex: 1;
+    z-index: 2;
+}
+
+.c-concept__heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    color: #000;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #000;
+}
+
+.c-concept__description {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #747474;
+}
+
+.c-concept__image {
+    position: relative;
+}
+
+.c-concept__image--right {
+    width: 50vw;
+    height: 40rem;
+    margin-right: calc(-50vw + 50rem);
+}
+
+.c-concept__image--left {
+    width: 50vw;
+    height: 40rem;
+    margin-left: calc(-50vw + 50rem);
+}
+
+.c-concept__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
