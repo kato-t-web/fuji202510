@@ -45,4 +45,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 初期化：自動再生開始
     startAutoPlay();
+
+    // スクロールフェードインアニメーション
+    const fadeInElements = document.querySelectorAll('.js-fadein');
+
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -100px 0px', // 要素が画面下から100px手前に来たら発動
+        threshold: 0
+    };
+
+    const fadeInObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                // 一度表示されたら監視を解除（必要に応じて削除可能）
+                fadeInObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // 各要素の監視を開始
+    fadeInElements.forEach(element => {
+        fadeInObserver.observe(element);
+    });
 });

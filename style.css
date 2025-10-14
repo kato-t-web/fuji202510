@@ -812,3 +812,56 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+.c-concept__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 6rem;
+}
+
+.c-concept__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-concept__card-image {
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.c-concept__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-concept__card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    color: #000;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.c-concept__card-text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #747474;
+    text-align: left;
+}
+
+/* Scroll Fade In Animation */
+.js-fadein {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.js-fadein.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
