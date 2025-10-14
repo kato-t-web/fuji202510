@@ -826,8 +826,8 @@ img {
 }
 
 .c-concept__card-image {
-    width: 100%;
-    height: 25rem;
+    width: 32rem;
+    height: 19.4rem;
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -854,14 +854,124 @@ img {
     text-align: left;
 }
 
+/* Menu Section */
+.l-menu {
+    width: 100vw;
+    margin-top: 9rem;
+    margin-bottom: 8rem;
+    background-image: url('assets/images/img_back.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+
+.l-menu__inner {
+    max-width: 119.6rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.l-menu .c-section-title::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3.4rem;
+    background-image: url('assets/images/icon_menu.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.c-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.c-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.c-menu-item:hover {
+    opacity: 0.6;
+}
+
+.c-menu-item__image {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.c-menu-item__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-menu-item__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    color: #3E2D0F;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.c-menu-item__title::before {
+    content: '';
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.c-menu-item:nth-child(1) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu01.png');
+}
+
+.c-menu-item:nth-child(2) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu02.png');
+}
+
+.c-menu-item:nth-child(3) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu03.png');
+}
+
+.c-menu-item:nth-child(4) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu04.png');
+}
+
+.c-menu-item:nth-child(5) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu05.png');
+}
+
+.c-menu-item:nth-child(6) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu06.png');
+}
+
+.c-menu-item:nth-child(7) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu07.png');
+}
+
+.c-menu-item:nth-child(8) .c-menu-item__title::before {
+    background-image: url('assets/images/icon_menu08.png');
+}
+
 /* Scroll Fade In Animation */
 .js-fadein {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: opacity 1s ease-out;
 }
 
 .js-fadein.is-visible {
     opacity: 1;
-    transform: translateY(0);
 }
