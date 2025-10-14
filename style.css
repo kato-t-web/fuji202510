@@ -884,7 +884,7 @@ img {
 
 .c-menu-grid {
     width: 100rem;
-    margin: 0 auto;
+    margin: 0 auto 8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
