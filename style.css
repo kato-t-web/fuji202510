@@ -792,6 +792,7 @@ img {
 
 .c-concept__image {
     position: relative;
+    height: auto;
 }
 
 .c-concept__image--right {
