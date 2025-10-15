@@ -1174,11 +1174,27 @@ img {
 
 .c-form-submit {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 
 .c-form-submit .c-button {
     margin: 0 auto;
+}
+
+.c-form-notice {
+    width: 100rem;
+    margin: 8rem auto 0;
+    text-align: left;
+}
+
+.c-form-notice p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #747474;
+}
+
+.c-form-notice strong {
+    color: #000;
 }
 
 /* Scroll Fade In Animation */
