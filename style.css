@@ -1202,7 +1202,7 @@ img {
     width: 100vw;
     padding-top: 6.5rem;
     padding-bottom: 8.5rem;
-    background-image: url('assets/images/img_bg01.jpg');
+    background-image: url('assets/images/img_bg02.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1239,14 +1239,14 @@ img {
 }
 
 .c-recruit-table {
-    max-width: 100rem;
+    width: 66.4rem;
     margin: 0 auto;
 }
 
 .c-recruit-table table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 0 2rem;
+    border-spacing: 2rem 2rem;
 }
 
 .c-recruit-table th {
