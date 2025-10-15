@@ -407,7 +407,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 2.532vw;
+    font-size: 2.6667vw;
   }
 }
 h2 {
@@ -546,6 +546,84 @@ img {
     text-decoration: none;
     font-family: "Noto Serif JP", serif;
     font-size: 1.4rem;
+}
+
+/* Hamburger Menu */
+.c-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.c-hamburger span {
+    display: block;
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.c-hamburger.is-active span:nth-child(1) {
+    transform: translateY(0.7rem) rotate(45deg);
+}
+
+.c-hamburger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+
+.c-hamburger.is-active span:nth-child(3) {
+    transform: translateY(-0.7rem) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+    .l-header__inner {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .c-hamburger {
+        display: flex;
+    }
+
+    .c-nav {
+        position: fixed;
+        top: 8rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 8rem);
+        background-color: rgba(0, 0, 0, 0.95);
+        transform: translateX(100%);
+        transition: transform 0.3s;
+        overflow-y: auto;
+    }
+
+    .c-nav.is-active {
+        transform: translateX(0);
+    }
+
+    .c-nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 4rem 2rem;
+    }
+
+    .c-nav__item {
+        width: 100%;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+    }
+
+    .c-nav__link {
+        display: block;
+        padding: 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }
 
 .c-slider {
@@ -1316,4 +1394,217 @@ img {
 
 .js-fadein.is-visible {
     opacity: 1;
+}
+
+/* ==========================================================================
+   Responsive Design (Mobile)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    /* Main Visual */
+    .l-mainvisual {
+        height: 60vw;
+    }
+
+    /* News Section */
+    .l-news {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .c-section-title {
+        font-size: 2.4rem;
+        margin-bottom: 6rem;
+    }
+
+    .c-news {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .c-news__item::after {
+        width: 100%;
+    }
+
+    .c-button {
+        width: 100%;
+        max-width: 32rem;
+    }
+
+    /* Concept Section */
+    .l-concept {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .c-concept {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .c-concept__row {
+        flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .c-concept__row--reverse {
+        flex-direction: column;
+    }
+
+    .c-concept__image--right,
+    .c-concept__image--left {
+        width: 100%;
+        height: 50vw;
+        margin: 0;
+    }
+
+    .c-concept__grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .c-concept__card-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 32 / 19.4;
+    }
+
+    /* Menu Section */
+    .l-menu {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .c-menu-grid {
+        width: 100%;
+        padding: 0 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        row-gap: 3rem;
+    }
+
+    .c-menu-item__image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 24 / 17;
+    }
+
+    .c-menu-item__title {
+        font-size: 1.4rem;
+    }
+
+    /* Store Section */
+    .l-store {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .c-store-content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .c-store-info__text {
+        margin-bottom: 3rem;
+    }
+
+    .c-store-map {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .c-store-map__embed iframe {
+        max-width: 100%;
+        height: 50vw;
+    }
+
+    .c-store-map__images {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .c-store-map__image {
+        width: calc(50% - 0.5rem);
+        height: auto;
+        aspect-ratio: 28 / 19.4;
+    }
+
+    /* Contact Section */
+    .l-contact {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .c-contact-form {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .c-form-row--3col {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .c-form-row {
+        margin-bottom: 2rem;
+    }
+
+    .c-form-submit {
+        margin-top: 4rem;
+    }
+
+    .c-form-notice {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    /* Recruit Section */
+    .l-recruit {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .c-recruit-table {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .c-recruit-table table {
+        border-spacing: 0 1.5rem;
+    }
+
+    .c-recruit-table th,
+    .c-recruit-table td {
+        display: block;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .c-recruit-table th {
+        height: auto;
+        padding: 1.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .c-recruit-table td {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    .l-footer {
+        height: auto;
+        padding: 4rem 2rem;
+    }
+
+    .l-footer__content {
+        width: 100%;
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .c-footer-logo img {
+        width: 20rem;
+        height: auto;
+    }
 }

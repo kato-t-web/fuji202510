@@ -69,4 +69,28 @@ document.addEventListener('DOMContentLoaded', function() {
     fadeInElements.forEach(element => {
         fadeInObserver.observe(element);
     });
+
+    // ハンバーガーメニュー
+    const hamburger = document.querySelector('.c-hamburger');
+    const nav = document.querySelector('.c-nav');
+    const navLinks = document.querySelectorAll('.c-nav__link');
+
+    if (hamburger && nav) {
+        // ハンバーガーボタンのクリックイベント
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('is-active');
+            nav.classList.toggle('is-active');
+            // スクロールを防止/許可
+            document.body.classList.toggle('body-fixed');
+        });
+
+        // メニューリンクのクリックでメニューを閉じる
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('is-active');
+                nav.classList.remove('is-active');
+                document.body.classList.remove('body-fixed');
+            });
+        });
+    }
 });
