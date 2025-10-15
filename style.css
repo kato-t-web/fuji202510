@@ -1118,7 +1118,7 @@ img {
 }
 
 .c-contact-form {
-    width: 100rem;
+    width: 68rem;
     margin: 0 auto;
 }
 
@@ -1159,6 +1159,7 @@ img {
     background-color: #fff;
     font-family: "Noto Sans JP", sans-serif;
     transition: border-color 0.3s;
+    box-shadow: inset 0 3px 6px rgba(21, 19, 19, 0.27);
 }
 
 .wpcf7-form-control:focus {
