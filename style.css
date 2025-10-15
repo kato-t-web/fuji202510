@@ -629,7 +629,7 @@ img {
 
 .c-section-title {
     font-size: 3.2rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #000;
     text-align: center;
     margin-bottom: 11.5rem;
@@ -988,7 +988,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(113, 113, 113, 0.8);
+    background-color: rgba(113, 113, 113, 0.2);
     z-index: 1;
 }
 
@@ -1090,6 +1090,94 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Contact Section */
+.l-contact {
+    width: 100vw;
+    padding-top: 10.5rem;
+    padding-bottom: 12.5rem;
+    background-color: #FFFBF0;
+}
+
+.l-contact__inner {
+    max-width: 119.6rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.l-contact .c-section-title::before {
+    content: '';
+    display: block;
+    width: 3rem;
+    height: 3.4rem;
+    background-image: url('assets/images/icon_contact.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.c-contact-form {
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.c-form-row {
+    margin-bottom: 3rem;
+}
+
+.c-form-row--3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.c-form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-form-label {
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.c-form-required {
+    color: #9D1534;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.wpcf7-form-control {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
+    transition: border-color 0.3s;
+}
+
+.wpcf7-form-control:focus {
+    outline: none;
+    border-color: #9D1534;
+}
+
+.wpcf7-textarea {
+    resize: vertical;
+    min-height: 15rem;
+}
+
+.c-form-submit {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.c-form-submit .c-button {
+    margin: 0 auto;
 }
 
 /* Scroll Fade In Animation */
