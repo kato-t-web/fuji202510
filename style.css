@@ -1027,6 +1027,9 @@ img {
 
 .c-store-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .c-store-info__title {
@@ -1042,10 +1045,15 @@ img {
 .c-store-info__text {
     color: #fff;
     margin-bottom: 4rem;
+    flex-grow: 1;
 }
 
 .c-store-info__text p {
     line-height: 2;
+}
+
+.l-store .c-button {
+    margin: 0;
 }
 
 .c-store-map {
@@ -1062,6 +1070,7 @@ img {
     width: 100%;
     height: 40rem;
     max-width: 50rem;
+    border-radius: 1rem;
 }
 
 .c-store-map__images {
