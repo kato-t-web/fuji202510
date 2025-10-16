@@ -1354,6 +1354,16 @@ img {
     border-radius: 0 1rem 1rem 0;
 }
 
+/* Spacer */
+.l-spacer {
+    width: 100vw;
+    height: 7rem;
+    background-image: url('assets/images/img_back.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top center;
+}
+
 /* Footer */
 .l-footer {
     width: 100vw;
