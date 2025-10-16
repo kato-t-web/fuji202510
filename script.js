@@ -120,6 +120,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // メニュー数量選択機能
     const menuCards = document.querySelectorAll('.c-menu-card');
+    const orderSummaryPrice = document.querySelector('.c-order-summary__price');
+    const resetButton = document.querySelector('.c-order-summary__reset');
+
+    // 全体の合計金額を計算
+    function updateGrandTotal() {
+        let grandTotal = 0;
+        menuCards.forEach(card => {
+            const quantityValue = card.querySelector('.c-quantity-value');
+            const priceElement = card.querySelector('.c-menu-card__price');
+            const unitPrice = parseInt(priceElement.getAttribute('data-price'));
+            const quantity = parseInt(quantityValue.textContent);
+            grandTotal += unitPrice * quantity;
+        });
+        if (orderSummaryPrice) {
+            orderSummaryPrice.textContent = `¥${grandTotal.toLocaleString()}`;
+        }
+    }
 
     menuCards.forEach(card => {
         const minusBtn = card.querySelector('.c-quantity-btn--minus');
@@ -136,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
             quantity++;
             quantityValue.textContent = quantity;
             updateTotal();
+            updateGrandTotal();
         });
 
         // マイナスボタン
@@ -144,6 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 quantity--;
                 quantityValue.textContent = quantity;
                 updateTotal();
+                updateGrandTotal();
             }
         });
 
@@ -153,4 +172,17 @@ document.addEventListener('DOMContentLoaded', function() {
             totalPrice.textContent = `¥${total.toLocaleString()}`;
         }
     });
+
+    // リセットボタン
+    if (resetButton) {
+        resetButton.addEventListener('click', function() {
+            menuCards.forEach(card => {
+                const quantityValue = card.querySelector('.c-quantity-value');
+                const totalPrice = card.querySelector('.c-menu-card__total');
+                quantityValue.textContent = '0';
+                totalPrice.textContent = '¥0';
+            });
+            updateGrandTotal();
+        });
+    }
 });
