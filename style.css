@@ -533,6 +533,13 @@ img {
 .c-logo h1 {
     font-size: 2rem;
     font-family: "Noto Serif JP", serif;
+    line-height: 1;
+}
+
+.c-logo h1 img {
+    width: 18.7rem;
+    height: 6.4rem;
+    object-fit: contain;
 }
 
 .c-nav__list {
