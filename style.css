@@ -1538,6 +1538,30 @@ img {
     background-image: url('assets/images/icon_menu02.png');
 }
 
+#noodles .c-menu-section-title::before {
+    background-image: url('assets/images/icon_menu03.png');
+}
+
+#rice .c-menu-section-title::before {
+    background-image: url('assets/images/icon_menu04.png');
+}
+
+#ippin .c-menu-section-title::before {
+    background-image: url('assets/images/icon_menu05.png');
+}
+
+#night .c-menu-section-title::before {
+    background-image: url('assets/images/icon_menu06.png');
+}
+
+#drinks .c-menu-section-title::before {
+    background-image: url('assets/images/icon_menu07.png');
+}
+
+#dessert .c-menu-section-title::before {
+    background-image: url('assets/images/icon_menu08.png');
+}
+
 .l-menu-section--alt {
     background-color: #FFFBF0;
     background-image: none;
