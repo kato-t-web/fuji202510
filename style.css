@@ -1609,8 +1609,9 @@ img {
 
 .c-menu-card__order {
     width: 32rem;
+    height: 2.5rem;
     background-color: #000;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1627,8 +1628,8 @@ img {
     height: 3rem;
     background-color: #000;
     color: #fff;
-    border: 0.1rem solid #fff;
-    border-radius: 0.5rem;
+    border: none;
+    border-radius: 0;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
