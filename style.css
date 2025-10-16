@@ -1589,7 +1589,6 @@ img {
     width: 32rem;
     background-color: #fff;
     padding: 2rem;
-    border-radius: 0 0 1rem 1rem;
 }
 
 .c-menu-card__description {
@@ -1609,9 +1608,10 @@ img {
 }
 
 .c-menu-card__order {
+    width: 32rem;
     background-color: #000;
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0 0 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1686,14 +1686,26 @@ img {
 }
 
 .c-accordion-button__arrow {
-    font-size: 2rem;
     position: absolute;
     right: 3rem;
+    width: 1rem;
+    height: 1rem;
     transition: transform 0.3s;
 }
 
-.c-accordion-button.is-open .c-accordion-button__arrow {
-    transform: rotate(180deg);
+.c-accordion-button__arrow::after {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border-bottom: 0.2rem solid #fff;
+    border-right: 0.2rem solid #fff;
+    transform: rotate(45deg);
+    margin-top: -0.3rem;
+}
+
+.c-accordion-button.is-open .c-accordion-button__arrow::after {
+    transform: rotate(-135deg);
 }
 
 /* Spacer */
