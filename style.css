@@ -1361,6 +1361,36 @@ img {
     border-radius: 0 1rem 1rem 0;
 }
 
+/* Menu Page Main Visual */
+.l-menu-mainvisual {
+    width: 100vw;
+    height: 27.8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.l-menu-mainvisual__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(62, 45, 15, 0.4), rgba(89, 76, 52, 0.4));
+    z-index: 1;
+}
+
+.l-menu-mainvisual__title {
+    font-size: 5rem;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 3px 6px #000000;
+}
+
 /* Spacer */
 .l-spacer {
     width: 100vw;
