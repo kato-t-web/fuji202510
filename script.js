@@ -117,4 +117,40 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // メニュー数量選択機能
+    const menuCards = document.querySelectorAll('.c-menu-card');
+
+    menuCards.forEach(card => {
+        const minusBtn = card.querySelector('.c-quantity-btn--minus');
+        const plusBtn = card.querySelector('.c-quantity-btn--plus');
+        const quantityValue = card.querySelector('.c-quantity-value');
+        const totalPrice = card.querySelector('.c-menu-card__total');
+        const priceElement = card.querySelector('.c-menu-card__price');
+        const unitPrice = parseInt(priceElement.getAttribute('data-price'));
+
+        let quantity = 0;
+
+        // プラスボタン
+        plusBtn.addEventListener('click', function() {
+            quantity++;
+            quantityValue.textContent = quantity;
+            updateTotal();
+        });
+
+        // マイナスボタン
+        minusBtn.addEventListener('click', function() {
+            if (quantity > 0) {
+                quantity--;
+                quantityValue.textContent = quantity;
+                updateTotal();
+            }
+        });
+
+        // 合計金額を更新
+        function updateTotal() {
+            const total = unitPrice * quantity;
+            totalPrice.textContent = `¥${total.toLocaleString()}`;
+        }
+    });
 });
