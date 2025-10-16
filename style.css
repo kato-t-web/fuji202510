@@ -1370,6 +1370,10 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 8rem;
+    background-image: url('assets/images/img_mv-menu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .l-menu-mainvisual__overlay {
