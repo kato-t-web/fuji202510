@@ -1557,11 +1557,11 @@ img {
 }
 
 .c-menu-card__image {
-    width: 100%;
-    aspect-ratio: 24 / 17;
+    width: 32rem;
+    height: 20rem;
+    position: relative;
     overflow: hidden;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .c-menu-card__image img {
@@ -1571,16 +1571,38 @@ img {
 }
 
 .c-menu-card__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
     font-family: "Noto Serif JP", serif;
     color: #000;
-    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.c-menu-card__content {
+    width: 32rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.c-menu-card__description {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #747474;
+    margin-bottom: 1.5rem;
 }
 
 .c-menu-card__price {
     font-size: 1.6rem;
-    color: #747474;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #000;
+    font-weight: bold;
 }
 
 /* Accordion Button */
