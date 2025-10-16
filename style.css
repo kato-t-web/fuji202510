@@ -1576,11 +1576,18 @@ img {
 }
 
 .c-menu-grid--hidden {
-    display: none;
+    display: grid;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-bottom: 0;
+    transition: max-height 0.6s ease-out, opacity 0.6s ease-out, margin-bottom 0.6s ease-out;
 }
 
 .c-menu-grid--hidden.is-open {
-    display: grid;
+    max-height: 200rem;
+    opacity: 1;
+    margin-bottom: 8rem;
 }
 
 /* Menu Card */
