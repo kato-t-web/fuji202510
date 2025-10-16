@@ -1720,7 +1720,7 @@ img {
 /* Order Summary */
 .c-order-summary {
     position: fixed;
-    bottom: 0;
+    bottom: 3rem;
     left: 50%;
     transform: translateX(-50%);
     width: 100rem;
@@ -1737,7 +1737,7 @@ img {
     padding: 3rem 7.25rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .c-order-summary__total {
@@ -1749,13 +1749,13 @@ img {
 }
 
 .c-order-summary__label {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     color: #fff;
     font-weight: 700;
 }
 
 .c-order-summary__price {
-    font-size: 2.4rem;
+    font-size: 4.8rem;
     color: #fff;
     font-weight: 700;
 }
@@ -1776,10 +1776,11 @@ img {
 .c-order-summary__reset {
     width: 25rem;
     height: 4rem;
+    text-align: center;
     background-color: #9D1534;
     color: #fff;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     border: none;
     cursor: pointer;
     transition: opacity 0.3s;
