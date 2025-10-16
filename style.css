@@ -1534,6 +1534,94 @@ img {
     background-image: url('assets/images/icon_menu01.png');
 }
 
+/* Menu Grid */
+.c-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.c-menu-grid--hidden {
+    display: none;
+}
+
+.c-menu-grid--hidden.is-open {
+    display: grid;
+}
+
+/* Menu Card */
+.c-menu-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-menu-card__image {
+    width: 100%;
+    aspect-ratio: 24 / 17;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+
+.c-menu-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-menu-card__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: "Noto Serif JP", serif;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.c-menu-card__price {
+    font-size: 1.6rem;
+    color: #747474;
+}
+
+/* Accordion Button */
+.c-accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37rem;
+    height: 8rem;
+    padding: 0 3rem;
+    background-color: #9D1534;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 4rem auto 0;
+    transition: opacity 0.3s;
+    position: relative;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.c-accordion-button:hover {
+    opacity: 0.6;
+}
+
+.c-accordion-button__text {
+    text-align: center;
+}
+
+.c-accordion-button__arrow {
+    font-size: 2rem;
+    position: absolute;
+    right: 3rem;
+    transition: transform 0.3s;
+}
+
+.c-accordion-button.is-open .c-accordion-button__arrow {
+    transform: rotate(180deg);
+}
+
 /* Spacer */
 .l-spacer {
     width: 100vw;

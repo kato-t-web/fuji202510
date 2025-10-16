@@ -93,4 +93,28 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // アコーディオン機能
+    const accordionButtons = document.querySelectorAll('[data-accordion-toggle]');
+
+    accordionButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-accordion-toggle');
+            const targetContent = document.querySelector(`[data-accordion="${targetId}"]`);
+
+            if (targetContent) {
+                // アコーディオンの開閉をトグル
+                targetContent.classList.toggle('is-open');
+                this.classList.toggle('is-open');
+
+                // ボタンのテキストを変更
+                const buttonText = this.querySelector('.c-accordion-button__text');
+                if (this.classList.contains('is-open')) {
+                    buttonText.textContent = buttonText.textContent.replace('全て見る', '閉じる');
+                } else {
+                    buttonText.textContent = buttonText.textContent.replace('閉じる', '全て見る');
+                }
+            }
+        });
+    });
 });
