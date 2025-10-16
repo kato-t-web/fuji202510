@@ -802,6 +802,51 @@ img {
     object-fit: cover;
 }
 
+/* Post Navigation */
+.c-post-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 6rem;
+}
+
+.c-post-nav__button {
+    width: 15rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #9D1534;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: opacity 0.3s;
+}
+
+.c-post-nav__button:hover {
+    opacity: 0.8;
+}
+
+.c-post-nav__button--prev {
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+}
+
+.c-post-nav__button--next {
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+}
+
+.c-post-nav__arrow {
+    font-size: 1.6rem;
+}
+
+.c-post-nav__text {
+    font-size: 1.4rem;
+}
+
 .c-section-title {
     font-size: 3.2rem;
     font-weight: 500;
