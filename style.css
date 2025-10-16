@@ -1395,6 +1395,10 @@ img {
     text-shadow: 0 3px 6px #000000;
 }
 
+.l-menu-mainvisual--news {
+    background-image: url('assets/images/img_mv-news.jpg');
+}
+
 /* Menu Page Section */
 .l-menu-page {
     width: 100vw;
