@@ -1538,10 +1538,6 @@ img {
     background-image: url('assets/images/icon_menu02.png');
 }
 
-.l-menu-section--alt {
-    background-color: #FFFBF0;
-}
-
 /* Menu Grid */
 .c-menu-grid {
     display: grid;
