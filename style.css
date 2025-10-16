@@ -814,6 +814,10 @@ img {
     right: 3rem;
 }
 
+.c-button--flow {
+    height: 6rem;
+}
+
 /* Concept Section */
 .l-concept {
     width: 100vw;
