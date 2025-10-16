@@ -1400,6 +1400,10 @@ img {
     width: 100vw;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    background-image: url('assets/images/img_back.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top center;
 }
 
 .l-menu-page__inner {
