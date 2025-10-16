@@ -1405,7 +1405,6 @@ img {
 .l-menu-page__inner {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
 /* Breadcrumb */
@@ -1443,8 +1442,7 @@ img {
 /* Menu Navigation */
 .c-menu-nav {
     display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 0;
 }
 
 .c-menu-nav__button {
@@ -1471,7 +1469,7 @@ img {
     position: absolute;
     bottom: 0.5rem;
     left: 0;
-    width: 100%;
+    width: calc(100% + 1.5rem);
     height: 0.1rem;
     background-color: #fff;
     border: 0.1rem solid #fff;
