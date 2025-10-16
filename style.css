@@ -1442,6 +1442,7 @@ img {
 /* Menu Navigation */
 .c-menu-nav {
     display: flex;
+    justify-content: space-between;
     gap: 0;
 }
 
