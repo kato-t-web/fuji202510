@@ -189,44 +189,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // 注文合計エリアのスクロール表示制御
     const orderSummary = document.querySelector('.c-order-summary');
     const recommendedSection = document.querySelector('#recommended');
-    const footer = document.querySelector('.l-footer');
 
-    if (orderSummary && recommendedSection && footer) {
+    if (orderSummary && recommendedSection) {
         const observerOptions = {
             root: null,
             rootMargin: '0px',
             threshold: 0.1
         };
 
-        let isRecommendedVisible = false;
-        let isFooterVisible = false;
-
         // おすすめセクションの監視
         const recommendedObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                isRecommendedVisible = entry.isIntersecting;
-                updateOrderSummaryVisibility();
+                if (entry.isIntersecting) {
+                    orderSummary.classList.add('c-order-summary--visible');
+                }
             });
         }, observerOptions);
-
-        // フッターの監視
-        const footerObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                isFooterVisible = entry.isIntersecting;
-                updateOrderSummaryVisibility();
-            });
-        }, observerOptions);
-
-        // 表示/非表示を更新
-        function updateOrderSummaryVisibility() {
-            if (isRecommendedVisible && !isFooterVisible) {
-                orderSummary.classList.add('c-order-summary--visible');
-            } else {
-                orderSummary.classList.remove('c-order-summary--visible');
-            }
-        }
 
         recommendedObserver.observe(recommendedSection);
-        footerObserver.observe(footer);
     }
 });
