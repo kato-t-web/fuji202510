@@ -1576,6 +1576,10 @@ img {
     background-image: url('assets/images/img_mv-news.jpg');
 }
 
+.l-menu-mainvisual--flow {
+    background-image: url('assets/images/img_mv-flow.jpg');
+}
+
 /* Menu Page Section */
 .l-menu-page {
     width: 100vw;
