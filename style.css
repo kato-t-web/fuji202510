@@ -892,6 +892,64 @@ img {
     margin: 0;
 }
 
+.c-flow-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+}
+
+.c-flow-step {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.c-flow-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 18rem;
+    transform: translateY(-50%);
+    width: 10rem;
+    height: 0.2rem;
+    background-color: #9D1534;
+}
+
+.c-flow-step__circle {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    background-color: #9D1534;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.c-flow-step__number {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
+.c-flow-step__title {
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.c-flow-step__subtitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+}
+
 .c-section-title {
     font-size: 3.2rem;
     font-weight: 500;
