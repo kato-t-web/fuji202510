@@ -950,6 +950,62 @@ img {
     margin: 0;
 }
 
+.c-flow-detail {
+    margin-top: 8rem;
+}
+
+.c-flow-detail__heading {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.c-flow-detail__circle {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: #9D1534;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.c-flow-detail__step {
+    font-size: 2.2rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.c-flow-detail__number {
+    font-size: 2.6rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.c-flow-detail__content {
+    flex: 1;
+    border-bottom: 0.2rem solid #9D1534;
+    padding-bottom: 1rem;
+    margin-left: 0;
+    width: 35rem;
+}
+
+.c-flow-detail__title {
+    font-size: 3.4rem;
+    color: #000;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+}
+
+.c-flow-detail__description {
+    font-size: 1.6rem;
+    color: #000;
+    margin: 0;
+    line-height: 1.5;
+}
+
 .c-section-title {
     font-size: 3.2rem;
     font-weight: 500;
