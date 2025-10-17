@@ -1320,9 +1320,13 @@ img {
     width: 100rem;
     margin: 0 auto 8rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     row-gap: 4.5rem;
+}
+
+.c-menu-grid--home {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .c-menu-item {
