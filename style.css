@@ -896,7 +896,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 8rem;
     position: relative;
 }
 
@@ -912,7 +912,7 @@ img {
     top: 50%;
     left: 18rem;
     transform: translateY(-50%);
-    width: 10rem;
+    width: 8rem;
     height: 0.2rem;
     background-color: #9D1534;
 }
