@@ -986,8 +986,6 @@ img {
 
 .c-flow-detail__content {
     flex: 1;
-    border-bottom: 0.2rem solid #9D1534;
-    padding-bottom: 1rem;
     margin-left: 0;
     width: 35rem;
 }
@@ -995,7 +993,9 @@ img {
 .c-flow-detail__title {
     font-size: 3.4rem;
     color: #000;
-    margin: 0 0 0.5rem 0;
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #9D1534;
     line-height: 1.2;
 }
 
@@ -1003,6 +1003,7 @@ img {
     font-size: 1.6rem;
     color: #000;
     margin: 0;
+    padding-top: 1rem;
     line-height: 1.5;
 }
 
