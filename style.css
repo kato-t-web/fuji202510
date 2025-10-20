@@ -987,7 +987,7 @@ img {
 .c-flow-detail__content {
     flex: 1;
     margin-left: 0;
-    min-width: 35rem;
+    width: 35rem;
 }
 
 .c-flow-detail__title {
@@ -1012,7 +1012,7 @@ img {
 /* Flow Content */
 .c-flow-content {
     width: 100rem;
-    margin-top: 6rem;
+    margin: 6rem auto 0;
 }
 
 .c-flow-content__item {
