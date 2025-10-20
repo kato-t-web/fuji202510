@@ -1016,8 +1016,20 @@ img {
 
 .c-flow-content__item {
     display: flex;
-    gap: 4rem;
-    margin-bottom: 6rem;
+    gap: 7rem;
+    margin-bottom: 8rem;
+    position: relative;
+}
+
+.c-flow-content__item:not(:first-child) .c-flow-content__image::before {
+    content: '';
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.5rem;
+    height: 4rem;
+    background-color: #9D1534;
 }
 
 .c-flow-content__image {
@@ -1026,6 +1038,7 @@ img {
     height: 30rem;
     overflow: hidden;
     border-radius: 1rem;
+    position: relative;
 }
 
 .c-flow-content__image img {
@@ -1039,6 +1052,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    justify-content: center;
 }
 
 .c-flow-content__heading {
