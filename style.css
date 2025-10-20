@@ -957,6 +957,8 @@ img {
 .c-flow-detail__heading {
     display: flex;
     align-items: center;
+    width: max-content;
+    margin: 0 auto;
     gap: 0;
 }
 
