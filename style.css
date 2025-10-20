@@ -1024,11 +1024,11 @@ img {
 .c-flow-content__item:not(:first-child) .c-flow-content__image::before {
     content: '';
     position: absolute;
-    top: -4rem;
+    top: -8rem;
     left: 50%;
     transform: translateX(-50%);
     width: 0.5rem;
-    height: 4rem;
+    height: 8rem;
     background-color: #9D1534;
 }
 
@@ -1036,9 +1036,12 @@ img {
     flex-shrink: 0;
     width: 50rem;
     height: 30rem;
-    overflow: hidden;
     border-radius: 1rem;
     position: relative;
+}
+
+.c-flow-content__image > img {
+    border-radius: 1rem;
 }
 
 .c-flow-content__image img {
