@@ -1080,6 +1080,15 @@ img {
     font-style: italic;
 }
 
+/* Flow Manners Title */
+.c-flow-manners-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin: 6rem 0 4rem;
+}
+
 /* Flow Menu Grid */
 .c-flow-menu-grid {
     display: grid;
