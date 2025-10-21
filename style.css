@@ -1100,6 +1100,17 @@ img {
     margin-right: auto;
 }
 
+.c-flow-menu-grid--4col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.c-flow-menu-grid--payment .c-flow-menu-card__image {
+    width: 26.3rem;
+    height: 14.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .c-flow-menu-card {
     display: flex;
     flex-direction: column;
