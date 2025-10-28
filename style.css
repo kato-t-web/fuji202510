@@ -1166,8 +1166,8 @@ img {
 .l-news .c-section-title::before {
     content: '';
     display: block;
-    width: 3.7rem;
-    height: 2.7rem;
+    width: 6rem;
+    height: 6rem;
     background-image: url('assets/images/icon_news.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -1177,8 +1177,8 @@ img {
 .l-concept .c-section-title::before {
     content: '';
     display: block;
-    width: 3rem;
-    height: 3.4rem;
+    width: 6rem;
+    height: 6rem;
     background-image: url('assets/images/icon_concept.png');
     background-size: contain;
     background-repeat: no-repeat;
