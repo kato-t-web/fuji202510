@@ -1721,6 +1721,14 @@ img {
     background-position: center;
 }
 
+.c-contact__notice {
+    font-size: 2.4rem;
+    color: #9D1534;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
 .c-contact-form {
     width: 68rem;
     margin: 0 auto;
