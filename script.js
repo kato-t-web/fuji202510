@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sliderItems = document.querySelectorAll('.c-slider__item');
     const dots = document.querySelectorAll('.c-slider__dot');
+    const mvTexts = document.querySelectorAll('.c-mv-text');
     let currentIndex = 0;
     let intervalId;
 
@@ -14,6 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // 指定されたインデックスのスライドとドットに is-active クラスを追加
         sliderItems[index].classList.add('is-active');
         dots[index].classList.add('is-active');
+
+        // 全てのMVテキストを非表示にして、対応するテキストだけ表示
+        mvTexts.forEach(text => {
+            const slideIndex = parseInt(text.getAttribute('data-slide'));
+            if (slideIndex === index) {
+                text.classList.add('is-visible');
+            } else {
+                text.classList.remove('is-visible');
+            }
+        });
 
         currentIndex = index;
     }
@@ -41,6 +52,14 @@ document.addEventListener('DOMContentLoaded', function() {
             showSlide(index);
             startAutoPlay(); // クリック後、自動再生を再開
         });
+    });
+
+    // 初期化：1枚目のスライドに対応するMVテキストを表示
+    mvTexts.forEach(text => {
+        const slideIndex = parseInt(text.getAttribute('data-slide'));
+        if (slideIndex === currentIndex) {
+            text.classList.add('is-visible');
+        }
     });
 
     // 初期化：自動再生開始
