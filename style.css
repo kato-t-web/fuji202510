@@ -712,7 +712,6 @@ img {
     font-family: "Noto Serif JP", serif;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
     line-height: 1.8;
-    letter-spacing: 2rem;
 }
 
 .c-mv-text__line:last-child {
@@ -724,6 +723,11 @@ img {
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    margin-bottom: 2rem;
+}
+
+.c-mv-text__char:last-child {
+    margin-bottom: 0;
 }
 
 .c-mv-text.is-visible .c-mv-text__char {
