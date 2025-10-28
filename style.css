@@ -726,6 +726,37 @@ img {
     text-indent: 6.5rem;
 }
 
+.c-mv-buttons {
+    position: absolute;
+    right: calc(50% - 60rem);
+    bottom: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    z-index: 10;
+}
+
+.c-mv-button {
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.c-mv-button:hover {
+    opacity: 0.8;
+}
+
+.c-mv-button--youtube img,
+.c-mv-button--instagram img {
+    width: 14rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.c-mv-button--contact img {
+    width: 18rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
 /* News Section */
 .l-news {
     width: 100vw;
