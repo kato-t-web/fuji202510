@@ -6,21 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     let intervalId;
 
-    // MVテキストの各文字をspanで囲む
-    mvTexts.forEach(mvText => {
-        const lines = mvText.querySelectorAll('.c-mv-text__line');
-        lines.forEach(line => {
-            const text = line.textContent;
-            line.innerHTML = '';
-            [...text].forEach(char => {
-                const span = document.createElement('span');
-                span.className = 'c-mv-text__char';
-                span.textContent = char;
-                line.appendChild(span);
-            });
-        });
-    });
-
     // スライド切り替え関数
     function showSlide(index) {
         // 全てのスライドとドットから is-active クラスを削除
@@ -35,10 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         mvTexts.forEach(text => {
             const slideIndex = parseInt(text.getAttribute('data-slide'));
             if (slideIndex === index) {
-                // 0.5秒後にアニメーション開始
-                setTimeout(() => {
-                    text.classList.add('is-visible');
-                }, 500);
+                text.classList.add('is-visible');
             } else {
                 text.classList.remove('is-visible');
             }
@@ -76,10 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     mvTexts.forEach(text => {
         const slideIndex = parseInt(text.getAttribute('data-slide'));
         if (slideIndex === currentIndex) {
-            // 0.5秒後にアニメーション開始
-            setTimeout(() => {
-                text.classList.add('is-visible');
-            }, 500);
+            text.classList.add('is-visible');
         }
     });
 
