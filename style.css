@@ -1352,7 +1352,7 @@ img {
 }
 
 .c-concept__heading {
-    font-size: 2.4rem;
+    font-size: 3.3rem;
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
     color: #000;
@@ -1369,7 +1369,7 @@ img {
     height: 7.7rem;
     font-size: 5.6rem;
     color: #fff;
-    background-color: #9D1534;
+    background-color: #000;
     border-radius: 0.5rem;
 }
 
