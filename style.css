@@ -1452,8 +1452,8 @@ img {
 .l-menu .c-section-title::before {
     content: '';
     display: block;
-    width: 3rem;
-    height: 3.4rem;
+    width: 6rem;
+    height: 6rem;
     background-image: url('assets/images/icon_menu.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -1597,8 +1597,8 @@ img {
 .l-store .c-section-title::before {
     content: '';
     display: block;
-    width: 3rem;
-    height: 3.4rem;
+    width: 6rem;
+    height: 6rem;
     background-image: url('assets/images/icon_store.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -1695,8 +1695,8 @@ img {
 .l-contact .c-section-title::before {
     content: '';
     display: block;
-    width: 3rem;
-    height: 3.4rem;
+    width: 6rem;
+    height: 6rem;
     background-image: url('assets/images/icon_contact.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -1816,8 +1816,8 @@ img {
 .l-recruit .c-section-title::before {
     content: '';
     display: block;
-    width: 3rem;
-    height: 3.4rem;
+    width: 6rem;
+    height: 6rem;
     background-image: url('assets/images/icon_recruit.png');
     background-size: contain;
     background-repeat: no-repeat;
