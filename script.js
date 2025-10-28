@@ -6,6 +6,21 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     let intervalId;
 
+    // MVテキストの各文字をspanで囲む
+    mvTexts.forEach(mvText => {
+        const lines = mvText.querySelectorAll('.c-mv-text__line');
+        lines.forEach(line => {
+            const text = line.textContent;
+            line.innerHTML = '';
+            [...text].forEach(char => {
+                const span = document.createElement('span');
+                span.className = 'c-mv-text__char';
+                span.textContent = char;
+                line.appendChild(span);
+            });
+        });
+    });
+
     // スライド切り替え関数
     function showSlide(index) {
         // 全てのスライドとドットから is-active クラスを削除
@@ -20,9 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
         mvTexts.forEach(text => {
             const slideIndex = parseInt(text.getAttribute('data-slide'));
             if (slideIndex === index) {
-                text.classList.add('is-visible');
+                // 0.5秒後にアニメーション開始
+                setTimeout(() => {
+                    text.classList.add('is-visible');
+                    // 各文字に順番にディレイを設定
+                    const chars = text.querySelectorAll('.c-mv-text__char');
+                    chars.forEach((char, i) => {
+                        char.style.transitionDelay = `${i * 0.05}s`;
+                    });
+                }, 500);
             } else {
                 text.classList.remove('is-visible');
+                // ディレイをリセット
+                const chars = text.querySelectorAll('.c-mv-text__char');
+                chars.forEach(char => {
+                    char.style.transitionDelay = '0s';
+                });
             }
         });
 
@@ -58,7 +86,15 @@ document.addEventListener('DOMContentLoaded', function() {
     mvTexts.forEach(text => {
         const slideIndex = parseInt(text.getAttribute('data-slide'));
         if (slideIndex === currentIndex) {
-            text.classList.add('is-visible');
+            // 0.5秒後にアニメーション開始
+            setTimeout(() => {
+                text.classList.add('is-visible');
+                // 各文字に順番にディレイを設定
+                const chars = text.querySelectorAll('.c-mv-text__char');
+                chars.forEach((char, i) => {
+                    char.style.transitionDelay = `${i * 0.05}s`;
+                });
+            }, 500);
         }
     });
 

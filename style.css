@@ -703,13 +703,6 @@ img {
     top: 8.6rem;
     writing-mode: vertical-rl;
     z-index: 3;
-    opacity: 0;
-    transition: opacity 0.6s ease-in-out;
-}
-
-.c-mv-text.is-visible {
-    opacity: 1;
-    transition-delay: 0.3s;
 }
 
 .c-mv-text__line {
@@ -724,6 +717,18 @@ img {
 
 .c-mv-text__line:last-child {
     text-indent: 6.5rem;
+}
+
+.c-mv-text__char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.c-mv-text.is-visible .c-mv-text__char {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* News Section */
