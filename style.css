@@ -521,6 +521,7 @@ img {
 }
 
 .l-mainvisual {
+    position: relative;
     width: 100vw;
     height: 50vw;
     overflow: hidden;
@@ -694,6 +695,23 @@ img {
 
 .c-slider__dot.is-active {
     opacity: 1;
+}
+
+.c-mv-text {
+    position: absolute;
+    left: calc(50% - 59.4rem);
+    top: 8.6rem;
+    writing-mode: vertical-rl;
+    z-index: 3;
+}
+
+.c-mv-text__line {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Noto Serif JP", serif;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+    line-height: 1.8;
 }
 
 /* News Section */
