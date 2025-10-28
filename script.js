@@ -38,19 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 0.5秒後にアニメーション開始
                 setTimeout(() => {
                     text.classList.add('is-visible');
-                    // 各文字に順番にディレイを設定
-                    const chars = text.querySelectorAll('.c-mv-text__char');
-                    chars.forEach((char, i) => {
-                        char.style.transitionDelay = `${i * 0.05}s`;
-                    });
                 }, 500);
             } else {
                 text.classList.remove('is-visible');
-                // ディレイをリセット
-                const chars = text.querySelectorAll('.c-mv-text__char');
-                chars.forEach(char => {
-                    char.style.transitionDelay = '0s';
-                });
             }
         });
 
@@ -89,11 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // 0.5秒後にアニメーション開始
             setTimeout(() => {
                 text.classList.add('is-visible');
-                // 各文字に順番にディレイを設定
-                const chars = text.querySelectorAll('.c-mv-text__char');
-                chars.forEach((char, i) => {
-                    char.style.transitionDelay = `${i * 0.05}s`;
-                });
             }, 500);
         }
     });
