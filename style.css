@@ -1352,6 +1352,9 @@ img {
 }
 
 .c-concept__heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     font-size: 3.3rem;
     font-weight: 500;
     font-family: "Noto Serif JP", serif;
@@ -1359,6 +1362,10 @@ img {
     margin-bottom: 3rem;
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid #000;
+}
+
+.c-concept__heading-text {
+    flex: 1;
 }
 
 .c-concept__heading-highlight {
