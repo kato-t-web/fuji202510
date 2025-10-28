@@ -712,6 +712,11 @@ img {
     font-family: "Noto Serif JP", serif;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
     line-height: 1.8;
+    letter-spacing: 2rem;
+}
+
+.c-mv-text__line:last-child {
+    text-indent: 6.5rem;
 }
 
 /* News Section */
