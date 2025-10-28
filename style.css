@@ -748,13 +748,13 @@ img {
 .c-mv-button--instagram img {
     width: 14rem;
     height: 4rem;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .c-mv-button--contact img {
     width: 18rem;
     height: 4rem;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* News Section */
