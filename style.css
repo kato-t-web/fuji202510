@@ -1454,13 +1454,13 @@ img {
 
 .c-concept__image--right {
     width: 50vw;
-    height: 40rem;
+    height: 32.7vw;
     margin-right: calc(-50vw + 50rem);
 }
 
 .c-concept__image--left {
     width: 50vw;
-    height: 40rem;
+    height: 32.7vw;
     margin-left: calc(-50vw + 50rem);
 }
 
