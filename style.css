@@ -1475,6 +1475,9 @@ img {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     margin-top: 6rem;
+    width: 119.4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .c-concept__card {
