@@ -1669,9 +1669,6 @@ img {
     color: #fff;
 }
 
-.c-section-title--white::before {
-    filter: brightness(0) invert(1);
-}
 
 .l-store .c-section-title::before {
     content: '';
