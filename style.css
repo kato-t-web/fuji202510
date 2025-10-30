@@ -1061,7 +1061,8 @@ img {
 .c-flow-detail__content {
     flex: 1;
     margin-left: 0;
-    width: 35rem;
+    width: max-content;
+    padding-right: 3.4rem;
 }
 
 .c-flow-detail__title {
