@@ -1028,6 +1028,7 @@ img {
     align-items: center;
     width: max-content;
     margin: 0 0 6rem 0;
+    padding-left: 0;
     gap: 0;
 }
 
