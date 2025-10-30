@@ -1016,15 +1016,11 @@ img {
     position: relative;
 }
 
-.c-flow-detail:not(:first-child)::before {
-    content: '';
-    position: absolute;
-    top: -8rem;
-    left: 4.25rem;
+.c-flow-detail__line {
     width: 0.5rem;
     height: 8rem;
     background-color: #9D1534;
-    z-index: 1;
+    margin: 0 0 0 4.25rem;
 }
 
 .c-flow-detail__heading {
