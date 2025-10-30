@@ -1013,13 +1013,24 @@ img {
 
 .c-flow-detail {
     margin-top: 8rem;
+    position: relative;
+}
+
+.c-flow-detail:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: -8rem;
+    left: 4.25rem;
+    width: 0.5rem;
+    height: 8rem;
+    background-color: #9D1534;
 }
 
 .c-flow-detail__heading {
     display: flex;
     align-items: center;
     width: max-content;
-    margin: 0 auto;
+    margin: 0 0 6rem 0;
     gap: 0;
 }
 
@@ -1085,16 +1096,6 @@ img {
     position: relative;
 }
 
-.c-flow-content__item:not(:first-child) .c-flow-content__image::before {
-    content: '';
-    position: absolute;
-    top: -8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0.5rem;
-    height: 8rem;
-    background-color: #9D1534;
-}
 
 .c-flow-content__image {
     flex-shrink: 0;
