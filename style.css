@@ -1024,6 +1024,7 @@ img {
     width: 0.5rem;
     height: 8rem;
     background-color: #9D1534;
+    z-index: 1;
 }
 
 .c-flow-detail__heading {
