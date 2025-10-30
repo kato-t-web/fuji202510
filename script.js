@@ -227,4 +227,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
         recommendedObserver.observe(recommendedSection);
     }
+
+    // Flow page: 円同士を繋ぐ線の高さを動的に調整
+    function adjustFlowLines() {
+        const flowDetails = document.querySelectorAll('.c-flow-detail');
+
+        flowDetails.forEach((detail, index) => {
+            const line = detail.querySelector('.c-flow-detail__line');
+            if (line && index < flowDetails.length - 1) {
+                // 次のc-flow-detailを取得
+                const nextDetail = flowDetails[index + 1];
+
+                // 円要素を取得して、その中心位置を計算
+                const currentCircle = detail.querySelector('.c-flow-detail__circle');
+                const nextCircle = nextDetail.querySelector('.c-flow-detail__circle');
+
+                if (currentCircle && nextCircle) {
+                    // 現在の円の位置（ページ上部からの距離）
+                    const currentCircleRect = currentCircle.getBoundingClientRect();
+                    const currentCircleCenter = currentCircleRect.top + currentCircleRect.height / 2;
+
+                    // 次の円の位置
+                    const nextCircleRect = nextCircle.getBoundingClientRect();
+                    const nextCircleCenter = nextCircleRect.top + nextCircleRect.height / 2;
+
+                    // 円の中心同士の距離
+                    const lineHeight = nextCircleCenter - currentCircleCenter;
+
+                    line.style.height = `${lineHeight}px`;
+                }
+            }
+        });
+    }
+
+    // Flow pageが存在する場合のみ実行
+    if (document.querySelector('.c-flow-detail__line')) {
+        // 画像の読み込みが完了してから実行
+        window.addEventListener('load', adjustFlowLines);
+        // ウィンドウリサイズ時にも再計算
+        window.addEventListener('resize', adjustFlowLines);
+    }
 });
