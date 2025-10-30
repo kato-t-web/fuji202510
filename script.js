@@ -245,14 +245,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (currentCircle && nextCircle) {
                     // 現在の円の位置（ページ上部からの距離）
                     const currentCircleRect = currentCircle.getBoundingClientRect();
-                    const currentCircleCenter = currentCircleRect.top + currentCircleRect.height / 2;
+                    const currentCircleBottom = currentCircleRect.top + currentCircleRect.height;
 
                     // 次の円の位置
                     const nextCircleRect = nextCircle.getBoundingClientRect();
-                    const nextCircleCenter = nextCircleRect.top + nextCircleRect.height / 2;
+                    const nextCircleTop = nextCircleRect.top;
 
-                    // 円の中心同士の距離
-                    const lineHeight = nextCircleCenter - currentCircleCenter;
+                    // 円の下端から次の円の上端までの距離
+                    const lineHeight = nextCircleTop - currentCircleBottom;
 
                     line.style.height = `${lineHeight}px`;
                 }
