@@ -1,0 +1,140 @@
+<?php
+/**
+ * Template Name: Flow Page（ご利用の流れ）
+ * Template Post Type: page
+ */
+
+get_header();
+?>
+
+<div class="l-menu-mainvisual l-menu-mainvisual--flow">
+    <div class="l-menu-mainvisual__overlay"></div>
+    <h2 class="l-menu-mainvisual__title">ご利用の流れ</h2>
+</div>
+
+<section class="l-menu-page">
+    <div class="l-menu-page__inner">
+        <nav class="c-breadcrumb">
+            <ul class="c-breadcrumb__list">
+                <li class="c-breadcrumb__item"><a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a></li>
+                <li class="c-breadcrumb__item">ご利用の流れ</li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section class="l-flow">
+    <div class="l-flow__inner">
+        <div class="c-flow-steps">
+            <div class="c-flow-step">
+                <div class="c-flow-step__circle">
+                    <p class="c-flow-step__number">Step 1</p>
+                    <p class="c-flow-step__title">来 店</p>
+                    <p class="c-flow-step__subtitle">Entrance</p>
+                </div>
+            </div>
+            <div class="c-flow-step">
+                <div class="c-flow-step__circle">
+                    <p class="c-flow-step__number">Step 2</p>
+                    <p class="c-flow-step__title">注 文</p>
+                    <p class="c-flow-step__subtitle">Ordering</p>
+                </div>
+            </div>
+            <div class="c-flow-step">
+                <div class="c-flow-step__circle">
+                    <p class="c-flow-step__number">Step 3</p>
+                    <p class="c-flow-step__title">会 計</p>
+                    <p class="c-flow-step__subtitle">Payment</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-flow-detail">
+            <h4 class="c-flow-detail__heading">
+                <div class="c-flow-detail__circle">
+                    <span class="c-flow-detail__step">Step</span>
+                    <span class="c-flow-detail__number">1</span>
+                </div>
+                <div class="c-flow-detail__content">
+                    <p class="c-flow-detail__title">来店時 ／Entrance </p>
+                    <p class="c-flow-detail__description">お店にお越しいただく流れをご紹介します</p>
+                </div>
+            </h4>
+
+            <div class="c-flow-content">
+                <div class="c-flow-content__item">
+                    <div class="c-flow-content__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/img_flow01.png" alt="到着">
+                    </div>
+                    <div class="c-flow-content__text">
+                        <p class="c-flow-content__description-ja">はじめてご来店される際は、一度店員にお声がけくださいませ。その際は「Self Menu」とお伝えください。店員が空いている席へご案内します。 日本語が話せる場合は、そのまま空いている席にお座りいただいて構いません。</p>
+                        <p class="c-flow-content__description-en">When visiting us for the first time, please speak to a member of staff. Please say "Self Menu" when you do so, and we will guide you to an available seat. If you speak Japanese, you are welcome to take an available seat without speaking to the staff.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-flow-detail__line"></div>
+        </div>
+
+        <div class="c-flow-detail">
+            <h4 class="c-flow-detail__heading">
+                <div class="c-flow-detail__circle">
+                    <span class="c-flow-detail__step">Step</span>
+                    <span class="c-flow-detail__number">2</span>
+                </div>
+                <div class="c-flow-detail__content">
+                    <p class="c-flow-detail__title">ご注文時 ／Ordering</p>
+                    <p class="c-flow-detail__description">メニューの見方と注文方法をご説明します</p>
+                </div>
+            </h4>
+            <div class="c-flow-content">
+                <div class="c-flow-content__item">
+                    <div class="c-flow-content__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/img_flow02.png" alt="注文">
+                    </div>
+                    <div class="c-flow-content__text">
+                        <p class="c-flow-content__description-ja">お席に着きましたら多言語表記のメニュー表とセルフオーダー シートをお渡しします。メニューをご覧いただき、ご希望のメニューの 「Group」と「Number」を記入して店員にお渡しください。<br>
+                            ※アレルギーのチェック項目がございますので、 必要に応じてご記入ください。</p>
+                        <p class="c-flow-content__description-en">Once you are seated, we will give you a multi-lingual menu and a self-order sheet. Please look at the menu, fill in the "Group" and "Number" for your desired items on the sheet, and hand it to a staff member. There is a section for allergy checks, so please fill it out if necessary.</p>
+                    </div>
+                </div>
+
+                <div class="c-flow-content__item">
+                    <div class="c-flow-content__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/img_flow03.png" alt="オーダーシート">
+                    </div>
+                    <div class="c-flow-content__text">
+                        <p class="c-flow-content__description-ja">当店には外国語に対応する店員がいないため、 オーダーシートの「セルフ記入方式」を採用してい ます。日本語が話せるお客様は、そのまま店員に ご注文ください。</p>
+                        <p class="c-flow-content__description-en">As we do not have staff who can speak foreign languages, we use a "self-entry order sheet system."Customers who speak Japanese may place their orders verbally with a staff member.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="c-flow-detail__line"></div>
+        </div>
+
+        <div class="c-flow-detail">
+            <h4 class="c-flow-detail__heading">
+                <div class="c-flow-detail__circle">
+                    <span class="c-flow-detail__step">Step</span>
+                    <span class="c-flow-detail__number">3</span>
+                </div>
+                <div class="c-flow-detail__content">
+                    <p class="c-flow-detail__title">お会計時 ／Payment</p>
+                    <p class="c-flow-detail__description">お支払い方法とプロセスをご案内します</p>
+                </div>
+            </h4>
+            <div class="c-flow-content">
+                <div class="c-flow-content__item">
+                    <div class="c-flow-content__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/img_flow04.png" alt="会計">
+                    </div>
+                    <div class="c-flow-content__text">
+                        <p class="c-flow-content__description-ja">お支払い時は、テーブルに置いているオーダーシートをお持ちのうえ レジコーナー前にお越しください。紙幣や硬貨(日本円)、その他 キャッシュレス(クレジットカードorぺペイペイ)にてお支払いください。</p>
+                        <p class="c-flow-content__description-en">When paying, please bring your order sheet from your table and come to the cash register. You can pay with Japanese currency (bills and coins) or by cashless methods (credit card or PayPay).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<?php get_footer(); ?>
