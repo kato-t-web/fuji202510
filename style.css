@@ -1017,10 +1017,12 @@ img {
 }
 
 .c-flow-detail__line {
+    position: absolute;
     width: 0.5rem;
-    height: 8rem;
+    height: 60rem;
     background-color: #9D1534;
-    margin: 0 0 0 4.25rem;
+    left: 4.25rem;
+    top: 10.5rem;
 }
 
 .c-flow-detail__heading {
@@ -1092,6 +1094,7 @@ img {
     display: flex;
     gap: 7rem;
     margin-bottom: 8rem;
+    margin-left: 11.2rem;
     position: relative;
 }
 
