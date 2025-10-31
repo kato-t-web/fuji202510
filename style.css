@@ -556,6 +556,10 @@ img {
     font-size: 1.4rem;
 }
 
+.c-nav__buttons {
+    display: none;
+}
+
 /* Hamburger Menu */
 .c-hamburger {
     display: none;
@@ -631,6 +635,23 @@ img {
         padding: 2rem;
         font-size: 1.6rem;
         text-align: center;
+    }
+
+    .c-nav__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 3rem 2rem;
+        border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+    }
+
+    .c-nav__button {
+        display: block;
+    }
+
+    .c-nav__button img {
+        width: auto;
+        height: 5rem;
     }
 }
 
@@ -2513,7 +2534,17 @@ img {
 @media screen and (max-width: 768px) {
     /* Main Visual */
     .l-mainvisual {
-        height: 60vw;
+        height: calc(100vh - 8rem);
+    }
+
+    .c-mv-text {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .c-mv-buttons {
+        display: none;
     }
 
     /* News Section */
