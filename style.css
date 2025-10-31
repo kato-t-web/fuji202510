@@ -2559,6 +2559,16 @@ img {
         margin-bottom: 6rem;
     }
 
+    .l-news .c-section-title::before,
+    .l-concept .c-section-title::before,
+    .l-menu .c-section-title::before,
+    .l-store .c-section-title::before,
+    .l-contact .c-section-title::before,
+    .l-recruit .c-section-title::before {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
     .c-news {
         width: 35.4rem;
         margin: 0 auto;
@@ -2592,6 +2602,18 @@ img {
 
     .c-concept__row--reverse {
         flex-direction: column;
+    }
+
+    .c-concept__heading {
+        font-size: 2.8rem;
+    }
+
+    .c-concept__heading-highlight {
+        width: 6.2rem;
+        height: 6.1rem;
+        font-size: 4.6rem;
+        align-items: flex-end;
+        justify-content: center;
     }
 
     .c-concept__image--right,
