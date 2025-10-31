@@ -2571,6 +2571,8 @@ img {
     .c-button {
         width: 100%;
         max-width: 32rem;
+        height: 7.5rem;
+        margin-top: 8rem;
     }
 
     /* Concept Section */
