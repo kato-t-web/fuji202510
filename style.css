@@ -2624,14 +2624,24 @@ img {
     }
 
     .c-concept__grid {
+        width: 35.4rem;
+        margin: 0 auto;
         grid-template-columns: 1fr;
         gap: 4rem;
+    }
+
+    .c-concept__card {
+        width: 100%;
     }
 
     .c-concept__card-image {
         width: 100%;
         height: auto;
         aspect-ratio: 32 / 19.4;
+    }
+
+    .c-concept__card-image img {
+        height: auto;
     }
 
     /* Menu Section */
