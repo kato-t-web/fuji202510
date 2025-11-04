@@ -2699,6 +2699,17 @@ img {
         font-size: 1.4rem;
     }
 
+    .c-menu-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .c-menu-nav__button {
+        width: 17rem;
+        height: 4.8rem;
+    }
+
     /* Store Section */
     .l-store {
         padding-top: 6rem;
