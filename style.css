@@ -2664,6 +2664,10 @@ img {
     }
 
     /* Menu Section */
+    .l-menu-mainvisual {
+        height: 16.9rem;
+    }
+
     .l-menu-mainvisual__overlay {
         height: 16.9rem;
     }
