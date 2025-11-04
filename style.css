@@ -778,6 +778,21 @@ img {
     object-fit: cover;
 }
 
+.c-mv-logo {
+    position: absolute;
+    right: calc(50% - 49.8rem);
+    bottom: 11rem;
+    width: 20.2rem;
+    height: 19rem;
+    z-index: 10;
+}
+
+.c-mv-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* News Section */
 .l-news {
     width: 100vw;
