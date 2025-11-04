@@ -2619,10 +2619,12 @@ img {
 
     .c-concept__row--reverse {
         flex-direction: column;
+        margin-top: 8rem;
     }
 
     .c-concept__heading {
         font-size: 2.8rem;
+        justify-content: center;
     }
 
     .c-concept__heading-highlight {
@@ -2636,7 +2638,7 @@ img {
     .c-concept__image--right,
     .c-concept__image--left {
         width: 100%;
-        height: 50vw;
+        height: 23.1rem;
         margin: 0;
     }
 
