@@ -2664,6 +2664,14 @@ img {
     }
 
     /* Menu Section */
+    .l-menu-mainvisual__overlay {
+        height: 16.9rem;
+    }
+
+    .l-menu-mainvisual__title {
+        font-size: 3.6rem;
+    }
+
     .l-menu {
         padding-top: 6rem;
         padding-bottom: 6rem;
