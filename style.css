@@ -2688,6 +2688,10 @@ img {
         gap: 4rem;
     }
 
+    .c-menu-grid--hidden.is-open {
+        margin-top: 4rem;
+    }
+
     .c-menu-item,
     .c-menu-card {
         width: 100%;
