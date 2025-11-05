@@ -2764,6 +2764,14 @@ img {
         margin-bottom: 1.5rem;
     }
 
+    .c-news-detail__images--two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .c-news-detail__image {
+        width: 100%;
+    }
+
     .l-flow__inner {
         width: 35.4rem;
         margin: 0 auto;
