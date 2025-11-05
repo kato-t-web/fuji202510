@@ -2605,8 +2605,8 @@ img {
         position: absolute;
         right: 0;
         bottom: 1.5rem;
-        width: 6rem;
-        aspect-ratio: 1;
+        width: 4.3rem;
+        height: 0.6rem;
         background-image: url('assets/images/icon_news-arrow.png');
         background-size: contain;
         background-repeat: no-repeat;
