@@ -2776,6 +2776,16 @@ img {
         width: 35.4rem;
     }
 
+    .c-order-summary__inner {
+        padding: 5.2rem 4rem;
+    }
+
+    .c-order-summary__total {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* Store Section */
     .l-store {
         padding-top: 6rem;
