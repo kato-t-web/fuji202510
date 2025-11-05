@@ -2693,8 +2693,19 @@ img {
         width: 100%;
     }
 
-    .c-menu-item__image {
+    .c-menu-item__image,
+    .c-menu-card__image,
+    .c-menu-card__content,
+    .c-menu-card__title,
+    .c-menu-card__description,
+    .c-menu-card__price,
+    .c-menu-card__order,
+    .c-menu-card__quantity,
+    .c-menu-card__total {
         width: 100%;
+    }
+
+    .c-menu-item__image {
         height: auto;
         aspect-ratio: 24 / 17;
     }
