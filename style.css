@@ -2569,6 +2569,10 @@ img {
         padding-bottom: 6rem;
     }
 
+    .l-news-archive {
+        padding-top: 0;
+    }
+
     .c-section-title {
         font-size: 2.4rem;
         margin-bottom: 6rem;
@@ -2599,7 +2603,8 @@ img {
         color: #9D1534;
     }
 
-    .c-news__item::after {
+    .c-news__item::after,
+    .c-news--wide .c-news__item::after {
         width: 100%;
     }
 
