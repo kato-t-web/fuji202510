@@ -2721,7 +2721,8 @@ img {
     .c-menu-nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        column-gap: 1rem;
+        row-gap: 4rem;
     }
 
     .c-menu-nav__button {
