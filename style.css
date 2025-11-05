@@ -2792,6 +2792,10 @@ img {
         background-color: #fff;
     }
 
+    .c-order-summary__price {
+        font-size: 3.2rem;
+    }
+
     .c-order-summary__actions,
     .c-order-summary__reset {
         width: 100%;
