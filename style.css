@@ -2908,7 +2908,7 @@ img {
     /* Footer */
     .l-footer {
         height: auto;
-        padding: 7rem 2rem 4rem;
+        padding: 7rem 2rem 13rem;
     }
 
     .l-footer__content {
@@ -2922,5 +2922,9 @@ img {
     .c-footer-logo img {
         width: 22.3rem;
         height: auto;
+    }
+
+    .l-footer__copyright{
+        bottom: 2rem;
     }
 }
