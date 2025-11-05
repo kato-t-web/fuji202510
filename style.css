@@ -2751,9 +2751,17 @@ img {
         margin: 8.8rem auto 0;
     }
 
+    .l-news-detail {
+        padding-top: 0;
+    }
+
     .c-news-detail {
         width: 35.4rem;
         margin: 0 auto;
+    }
+
+    .c-news-detail__title {
+        margin-bottom: 1.5rem;
     }
 
     .l-flow__inner {
