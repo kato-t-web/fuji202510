@@ -2909,6 +2909,7 @@ img {
     .l-footer {
         height: auto;
         padding: 7rem 2rem 13rem;
+        background-position: -85rem;
     }
 
     .l-footer__content {
