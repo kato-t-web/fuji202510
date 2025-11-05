@@ -2783,7 +2783,16 @@ img {
     .c-order-summary__total {
         width: 100%;
         flex-direction: column;
-        align-items: center;
+        align-items: end;
+    }
+
+    .c-order-summary__divider {
+        width: 100%;
+    }
+
+    .c-order-summary__actions,
+    .c-order-summary__reset {
+        width: 100%;
     }
 
     /* Store Section */
