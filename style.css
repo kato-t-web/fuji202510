@@ -2589,6 +2589,16 @@ img {
         margin: 0 auto;
     }
 
+    .c-news__item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .c-news__date {
+        color: #9D1534;
+    }
+
     .c-news__item::after {
         width: 100%;
     }
