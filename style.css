@@ -2871,12 +2871,14 @@ img {
     .c-form-notice {
         width: 35.4rem;
         margin: 0 auto;
+        margin-top: 8rem;
     }
 
     /* Recruit Section */
     .l-recruit {
         padding-top: 6rem;
         padding-bottom: 6rem;
+        background-position: -125rem;
     }
 
     .c-recruit-table {
