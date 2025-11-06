@@ -2826,6 +2826,18 @@ img {
         display: none;
     }
 
+    .c-flow-detail__title {
+        font-size: 2.3rem;
+        padding-left: 5.5rem;
+        font-weight: 500;
+    }
+
+    .c-flow-detail__description {
+        font-size: 1.4rem;
+        padding-left: 5.5rem;
+        font-weight: 500;
+    }
+
     .c-flow-menu-grid {
         width: 35.4rem;
         margin-left: auto;
