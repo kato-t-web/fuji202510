@@ -1532,6 +1532,7 @@ img {
     height: 28.4rem;
     overflow: hidden;
     margin-bottom: 2rem;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .c-concept__card-image img {
@@ -2686,6 +2687,7 @@ img {
         width: 100%;
         height: auto;
         aspect-ratio: 32 / 19.4;
+        border-radius: 1rem 1rem 0 0;
     }
 
     .c-concept__card-image img {
