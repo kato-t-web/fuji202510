@@ -2826,6 +2826,21 @@ img {
         display: none;
     }
 
+    .c-flow-detail__heading {
+        width: 100%;
+    }
+
+    .c-flow-detail__circle {
+        width: 6.9rem;
+        height: 6.9rem;
+    }
+
+    .c-flow-detail__step,
+    .c-flow-detail__number {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
     .c-flow-detail__title {
         font-size: 2.3rem;
         padding-left: 5.5rem;
