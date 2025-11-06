@@ -2817,6 +2817,11 @@ img {
         margin-left: 0;
     }
 
+    .c-flow-content__image {
+        width: 100%;
+        height: auto;
+    }
+
     .c-flow-detail__line {
         display: none;
     }
