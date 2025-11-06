@@ -2836,6 +2836,18 @@ img {
         height: 10.3rem;
     }
 
+    .c-flow-step__number {
+        font-size: 1.6rem;
+    }
+
+    .c-flow-step__title {
+        font-size: 1.8rem;
+    }
+
+    .c-flow-step__subtitle {
+        font-size: 1.4rem;
+    }
+
     .c-order-summary {
         width: 35.4rem;
     }
