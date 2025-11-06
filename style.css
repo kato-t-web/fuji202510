@@ -2831,6 +2831,12 @@ img {
         gap: 2.2rem;
     }
 
+    .c-flow-step:not(:last-child)::after {
+        left: 10.3rem;
+        width: 2.2rem;
+        height: 0.2rem;
+    }
+
     .c-flow-step__circle {
         width: 10.3rem;
         height: 10.3rem;
