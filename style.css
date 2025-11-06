@@ -2801,6 +2801,10 @@ img {
         width: 100%;
     }
 
+    .l-flow {
+        padding-top: 0;
+    }
+
     .l-flow__inner {
         width: 35.4rem;
         margin: 0 auto;
@@ -2815,6 +2819,7 @@ img {
     .c-flow-content__item {
         flex-direction: column;
         margin-left: 0;
+        gap: 4rem;
     }
 
     .c-flow-content__image {
