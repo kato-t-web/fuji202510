@@ -560,6 +560,42 @@ img {
     display: none;
 }
 
+/* Language Selector */
+.c-lang-selector {
+    display: inline-block;
+}
+
+.c-lang-selector__select {
+    background-color: transparent;
+    color: #fff;
+    border: 0.1rem solid #fff;
+    border-radius: 0.3rem;
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    font-family: "Noto Serif JP", serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.c-lang-selector__select:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.c-lang-selector__select:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+.c-lang-selector__select option {
+    background-color: #000;
+    color: #fff;
+}
+
 /* Hamburger Menu */
 .c-hamburger {
     display: none;
@@ -639,8 +675,9 @@ img {
 
     .c-nav__buttons {
         display: flex;
-        justify-content: center;
-        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
         padding: 3rem 2rem;
         border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
     }
@@ -652,6 +689,19 @@ img {
     .c-nav__button img {
         width: auto;
         height: 5rem;
+    }
+
+    .c-nav__item--lang {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-lang-selector__select {
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem 3rem 1.5rem 1.5rem;
+        font-size: 1.6rem;
     }
 }
 
