@@ -1000,7 +1000,7 @@ img {
 .l-flow__inner {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 0 0 10rem;
+    padding: 0;
 }
 
 .c-flow-title {
@@ -1479,7 +1479,7 @@ img {
 .l-concept__inner {
     max-width: 119.6rem;
     margin: 0 auto;
-    padding: 8rem 2rem;
+    padding: 8rem 0;
     overflow: visible;
 }
 
@@ -1621,7 +1621,7 @@ img {
 .l-menu__inner {
     max-width: 119.6rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .l-menu .c-section-title::before {
@@ -1636,8 +1636,8 @@ img {
 }
 
 .c-menu-grid {
-    width: 100rem;
-    margin: 0 auto 8rem;
+    width: 100%;
+    margin: 0 0 8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
@@ -1756,7 +1756,7 @@ img {
 .l-store__inner {
     max-width: 119.6rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
     position: relative;
     z-index: 2;
 }
@@ -1861,7 +1861,7 @@ img {
 .l-contact__inner {
     max-width: 119.6rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .l-contact .c-section-title::before {
@@ -1998,7 +1998,7 @@ img {
 .l-recruit__inner {
     max-width: 119.6rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
     position: relative;
     z-index: 2;
 }
@@ -2198,7 +2198,7 @@ img {
 .l-menu-section__inner {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .c-menu-section-title {
