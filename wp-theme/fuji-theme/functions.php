@@ -35,6 +35,142 @@ function fuji_enqueue_scripts() {
     // カスタムCSS
     wp_enqueue_style('fuji-custom-style', get_template_directory_uri() . '/assets/css/custom.css', array(), '1.0.0');
 
+    // 背景画像パスの修正用インラインCSS
+    $template_uri = get_template_directory_uri();
+    $inline_css = "
+    /* 背景画像のパスを動的に設定 */
+    .l-news,
+    .l-news-archive,
+    .l-news-detail,
+    .l-flow,
+    .l-menu,
+    .l-menu-page,
+    .l-menu-section,
+    .l-spacer {
+        background-image: url('{$template_uri}/assets/images/img_back.png');
+    }
+
+    .l-store {
+        background-image: url('{$template_uri}/assets/images/img_bg01.jpg');
+    }
+
+    .l-recruit {
+        background-image: url('{$template_uri}/assets/images/img_bg02.jpg');
+    }
+
+    .l-footer {
+        background-image: url('{$template_uri}/assets/images/img_bgfooter.jpg');
+    }
+
+    .l-menu-mainvisual {
+        background-image: url('{$template_uri}/assets/images/img_mv-menu.jpg');
+    }
+
+    .l-menu-mainvisual--news {
+        background-image: url('{$template_uri}/assets/images/img_mv-news.jpg');
+    }
+
+    .l-menu-mainvisual--flow {
+        background-image: url('{$template_uri}/assets/images/img_mv-flow.jpg');
+    }
+
+    .l-news .c-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_news.png');
+    }
+
+    .l-concept .c-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_concept.png');
+    }
+
+    .l-menu .c-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu.png');
+    }
+
+    .l-store .c-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_store.png');
+    }
+
+    .l-contact .c-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_contact.png');
+    }
+
+    .l-recruit .c-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_recruit.png');
+    }
+
+    .c-menu-item:nth-child(1) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu01.png');
+    }
+
+    .c-menu-item:nth-child(2) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu02.png');
+    }
+
+    .c-menu-item:nth-child(3) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu03.png');
+    }
+
+    .c-menu-item:nth-child(4) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu04.png');
+    }
+
+    .c-menu-item:nth-child(5) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu05.png');
+    }
+
+    .c-menu-item:nth-child(6) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu06.png');
+    }
+
+    .c-menu-item:nth-child(7) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu07.png');
+    }
+
+    .c-menu-item:nth-child(8) .c-menu-item__title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu08.png');
+    }
+
+    #recommended .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu01.png');
+    }
+
+    #teishoku .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu02.png');
+    }
+
+    #noodles .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu03.png');
+    }
+
+    #rice .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu04.png');
+    }
+
+    #ippin .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu05.png');
+    }
+
+    #night .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu06.png');
+    }
+
+    #drinks .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu07.png');
+    }
+
+    #dessert .c-menu-section-title::before {
+        background-image: url('{$template_uri}/assets/images/icon_menu08.png');
+    }
+
+    @media screen and (max-width: 768px) {
+        .c-news__item::before {
+            background-image: url('{$template_uri}/assets/images/icon_news-arrow.png');
+        }
+    }
+    ";
+
+    wp_add_inline_style('fuji-custom-style', $inline_css);
+
     // カスタムJS
     wp_enqueue_script('fuji-script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.0', true);
 }
