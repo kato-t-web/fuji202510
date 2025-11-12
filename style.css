@@ -1598,6 +1598,7 @@ img {
     color: #000;
     margin-bottom: 1.5rem;
     text-align: center;
+    padding-left: 0;
 }
 
 .c-concept__card-text {
