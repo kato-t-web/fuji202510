@@ -2792,7 +2792,9 @@ img {
         margin-top: 4rem;
     }
 
-    .c-menu-item,
+    .c-menu-item{
+        width: 17rem;
+    }
     .c-menu-card {
         width: 100%;
     }
@@ -2816,6 +2818,7 @@ img {
 
     .c-menu-item__title {
         font-size: 1.4rem;
+        margin-bottom: 0;
     }
 
     .c-menu-nav {
