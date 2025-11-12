@@ -1530,6 +1530,7 @@ img {
     color: #fff;
     background-color: #000;
     border-radius: 0.5rem;
+    line-height: 1.4;
 }
 
 .c-concept__description {
