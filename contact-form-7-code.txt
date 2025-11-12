@@ -1,0 +1,195 @@
+================================================================================
+Contact Form 7 設定コード - 居食処富士 予約・お問い合わせフォーム
+================================================================================
+
+【フォームタブに貼り付けるコード】
+------------------------------------------------------------
+
+<div class="c-form-row c-form-row--3col">
+    <div class="c-form-field">
+        <label for="people" class="c-form-label">人数<span class="c-form-required">※必須</span></label>
+        [number* people id:people class:wpcf7-form-control class:wpcf7-number min:1 placeholder "例：4"]
+    </div>
+    <div class="c-form-field">
+        <label for="date" class="c-form-label">日付<span class="c-form-required">※必須</span></label>
+        [date* date id:date class:wpcf7-form-control class:wpcf7-date]
+    </div>
+    <div class="c-form-field">
+        <label for="time" class="c-form-label">時間<span class="c-form-required">※必須</span></label>
+        [select* time id:time class:wpcf7-form-control class:wpcf7-select include_blank "11:00" "11:15" "11:30" "11:45" "12:00" "12:15" "12:30" "12:45" "13:00" "13:15" "13:30" "13:45" "14:00" "18:00" "18:15" "18:30" "18:45" "19:00" "19:15" "19:30" "19:45" "20:00" "20:15" "20:30"]
+    </div>
+</div>
+
+<div class="c-form-row">
+    <div class="c-form-field">
+        <label for="name" class="c-form-label">お名前<span class="c-form-required">※必須</span></label>
+        [text* your-name id:name class:wpcf7-form-control class:wpcf7-text]
+    </div>
+</div>
+
+<div class="c-form-row">
+    <div class="c-form-field">
+        <label for="reservation-type" class="c-form-label">予約タイプ<span class="c-form-required">※必須</span></label>
+        [select* reservation-type id:reservation-type class:wpcf7-form-control class:wpcf7-select include_blank "会食" "宴会" "食事" "その他"]
+    </div>
+</div>
+
+<div class="c-form-row">
+    <div class="c-form-field">
+        <label for="tel" class="c-form-label">電話番号<span class="c-form-required">※必須</span></label>
+        [tel* tel id:tel class:wpcf7-form-control class:wpcf7-text class:wpcf7-tel class:wpcf7-validates-as-tel]
+    </div>
+</div>
+
+<div class="c-form-row">
+    <div class="c-form-field">
+        <label for="email" class="c-form-label">メールアドレス</label>
+        [email your-email id:email class:wpcf7-form-control class:wpcf7-text class:wpcf7-email]
+    </div>
+</div>
+
+<div class="c-form-row">
+    <div class="c-form-field">
+        <label for="message" class="c-form-label">備考</label>
+        [textarea your-message id:message class:wpcf7-form-control class:wpcf7-textarea]
+    </div>
+</div>
+
+<div class="c-form-submit">
+    [submit class:c-button "入力内容を送信する"]
+</div>
+
+
+【メールタブの設定】
+------------------------------------------------------------
+
+■ 送信先（To）:
+info@example.com
+（実際のメールアドレスに変更してください）
+
+■ 送信元（From）:
+[your-name] <wordpress@yourdomain.com>
+
+■ 題名（Subject）:
+【居食処富士】予約フォームからのお問い合わせ
+
+■ 追加ヘッダー（Additional Headers）:
+Reply-To: [your-email]
+
+■ メッセージ本文（Message Body）:
+予約フォームから新しいお問い合わせがありました。
+
+【予約情報】
+人数: [people]名
+日付: [date]
+時間: [time]
+
+【お客様情報】
+お名前: [your-name]
+予約タイプ: [reservation-type]
+電話番号: [tel]
+メールアドレス: [your-email]
+
+【備考】
+[your-message]
+
+--
+このメールは居食処富士のウェブサイトから送信されました
+
+
+【メール(2)タブ - 自動返信メール設定】
+------------------------------------------------------------
+
+■ 送信先（To）:
+[your-email]
+
+■ 送信元（From）:
+居食処富士 <noreply@yourdomain.com>
+
+■ 題名（Subject）:
+【居食処富士】ご予約ありがとうございます
+
+■ 追加ヘッダー（Additional Headers）:
+Reply-To: info@example.com
+
+■ メッセージ本文（Message Body）:
+[your-name] 様
+
+この度は居食処富士にご予約いただき、誠にありがとうございます。
+以下の内容でご予約を承りました。
+
+【ご予約内容】
+人数: [people]名
+日付: [date]
+時間: [time]
+予約タイプ: [reservation-type]
+
+【備考】
+[your-message]
+
+※このメールは自動送信です。
+　ご予約の最終確認については、お電話またはメールにて改めてご連絡させていただく場合がございます。
+
+【注意事項】
+・当日または前日の予約に関しては、直接お電話にてご予約をお願いいたします
+・ご予約のキャンセルについては前日までに直接電話にてご連絡をください
+
+【お問い合わせ先】
+居食処富士
+TEL / FAX: 0175-63-2908
+営業時間: 昼の部 11:00〜14:00 / 夜の部 18:00〜20:30（LO 20:00）
+定休日: 毎週水曜日
+
+--
+居食処富士
+〒039-2654 青森県上北郡東北町字塔ノ沢68−1
+
+
+【メッセージタブ - エラーメッセージのカスタマイズ（任意）】
+------------------------------------------------------------
+
+■ 送信完了メッセージ:
+ご予約ありがとうございます。内容を確認の上、改めてご連絡させていただきます。
+
+■ 送信エラーメッセージ:
+送信に失敗しました。恐れ入りますが、お電話にてお問い合わせください。TEL: 0175-63-2908
+
+■ バリデーションエラーメッセージ:
+入力内容に誤りがあります。赤枠の項目をご確認ください。
+
+■ 必須項目が未入力:
+この項目は必須です
+
+
+【追加CSS（WordPress管理画面 > 外観 > カスタマイズ > 追加CSS）】
+------------------------------------------------------------
+※既にcustom.cssに含まれているため、追加不要です。
+
+
+【設置方法】
+------------------------------------------------------------
+1. WordPress管理画面にログイン
+2. 「お問い合わせ」>「新規追加」をクリック
+3. フォーム名を入力（例：予約・お問い合わせフォーム）
+4. 上記「フォームタブに貼り付けるコード」をフォーム欄に貼り付け
+5. 「メール」タブで送信先などを設定
+6. 「メール(2)」タブで自動返信メールを設定（チェックボックスをON）
+7. 「保存」をクリック
+8. 生成されたショートコード [contact-form-7 id="xxx" title="予約・お問い合わせフォーム"] をコピー
+9. 固定ページまたはfront-page.phpの該当箇所に貼り付け
+
+front-page.phpの場合:
+<div class="c-contact-form js-fadein">
+    <?php echo do_shortcode('[contact-form-7 id="xxx" title="予約・お問い合わせフォーム"]'); ?>
+</div>
+
+
+【注意事項】
+------------------------------------------------------------
+・メールアドレスは実際に使用するものに変更してください
+・Contact Form 7のバージョンは最新のものを使用してください
+・スパム対策として、reCAPTCHAの設定を推奨します
+・time フィールドは15分刻みのセレクトボックスになっています
+  営業時間: 昼の部 11:00〜14:00 / 夜の部 18:00〜20:30（LO 20:00）
+
+================================================================================

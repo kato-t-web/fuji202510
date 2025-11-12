@@ -252,14 +252,19 @@ get_header();
 <section class="l-contact" id="contact">
     <div class="l-contact__inner">
         <h2 class="c-section-title js-fadein">ご予約・お問い合わせフォーム</h2>
-        <p class="c-contact__notice js-fadein">基本的に当日または前日の予約に関しては予約フォームではなく<br>直接電話でのご予約をお願いいたします　TEL 0175-06-2908</p>
+        <p class="c-contact__notice js-fadein">基本的に当日または前日の予約に関しては<br class="sp-only">予約フォームではなく<br class="pc-only">直接電話でのご予約を<br class="sp-only">お願いいたします　TEL 0175-06-2908</p>
         <div class="c-contact-form js-fadein">
             <?php echo do_shortcode('[contact-form-7 id="1" title="お問い合わせフォーム"]'); ?>
         </div>
     </div>
     <div class="c-form-notice">
-        <p><strong>注意事項：</strong><br>
-        基本的に予約フォームに関しては2日前からのご利用をお願いしておりますので、当日や前日の予約に関しては、予約フォームではなく直接電話でご連絡ください。当店では、お客様の個人情報（氏名・電話番号・メールアドレス等）を、ご予約の確認やご連絡の目的に限り使用いたします。法令に基づく場合を除き、第三者に開示・提供することはございません。情報は厳重に管理し、漏洩・改ざん・不正アクセス等の防止に努めます。</p>
+        <p><strong>注意事項：</strong></p>
+        <ul class="c-form-notice__list">
+            <li>当店では、お客様の個人情報（氏名・電話番号・メールアドレス等）を、ご予約の確認やご連絡の目的に限り使用いたします。</li>
+            <li>法令に基づく場合を除き、第三者に開示・提供することはございません。情報は厳重に管理し、漏洩・改ざん・不正アクセス等の防止に努めます。</li>
+            <li>ご宴会予約の場合、料金やメニュー確認のため、電話にてご連絡を入れさせていだく場合がございます ので予めご了承ください。</li>
+            <li>恐れ入りますが、<span class="c-form-notice__highlight">ご予約のキャンセルについては前日までに直接電話にて</span>ご連絡をください。</li>
+        </ul>
     </div>
 </section>
 
