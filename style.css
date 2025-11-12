@@ -3051,6 +3051,10 @@ img {
         padding-bottom: 6rem;
     }
 
+    .c-contact__notice {
+        font-size: 1.6rem;
+    }
+
     .c-contact-form {
         width: 35.4rem;
         margin: 0 auto;
