@@ -387,7 +387,7 @@ th {
 
 html {
   font-size: 62.5%;
-  color: #747474;
+  color: #000;
   font-family: "Noto Sans JP", sans-serif;
   overflow-x: hidden;
 }
@@ -515,9 +515,8 @@ img {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 6rem;
 }
 
 .l-mainvisual {
@@ -891,7 +890,7 @@ img {
 
 .c-news-detail__date {
     font-size: 1.6rem;
-    color: #747474;
+    color: #000;
     display: block;
     margin-bottom: 2rem;
 }
@@ -921,7 +920,7 @@ img {
 .c-news-detail__text {
     font-size: 1.6rem;
     line-height: 1.8;
-    color: #747474;
+    color: #000;
 }
 
 .c-news-detail__images {
@@ -1224,7 +1223,7 @@ img {
 .c-flow-content__description-ja,
 .c-flow-content__description-en {
     font-size: 1.6rem;
-    color: #747474;
+    color: #000;
     margin: 0;
     line-height: 1.8;
 }
@@ -1298,7 +1297,7 @@ img {
 
 .c-flow-menu-card__description {
     font-size: 1.6rem;
-    color: #747474;
+    color: #000;
     margin: 0;
     line-height: 1.8;
     padding: 0 2rem 2rem 2rem;
@@ -1379,7 +1378,7 @@ img {
 
 .c-news__date {
     font-size: 1.6rem;
-    color: #747474;
+    color: #000;
     flex-shrink: 0;
 }
 
@@ -1536,7 +1535,7 @@ img {
 .c-concept__description {
     font-size: 1.8rem;
     line-height: 1.8;
-    color: #747474;
+    color: #000;
 }
 
 .c-concept__image {
@@ -1603,7 +1602,7 @@ img {
 .c-concept__card-text {
     font-size: 1.4rem;
     line-height: 1.8;
-    color: #747474;
+    color: #000;
     text-align: left;
 }
 
@@ -1966,11 +1965,29 @@ img {
 .c-form-notice p {
     font-size: 1.4rem;
     line-height: 1.8;
-    color: #747474;
+    color: #000;
 }
 
 .c-form-notice strong {
     color: #000;
+}
+
+.c-form-notice__list {
+    list-style: disc;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+
+.c-form-notice__list li {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.c-form-notice__highlight {
+    color: #9D1534;
+    font-weight: bold;
 }
 
 /* Recruit Section */
@@ -2120,7 +2137,7 @@ img {
 
 .c-breadcrumb__item {
     font-size: 1.4rem;
-    color: #747474;
+    color: #000;
 }
 
 .c-breadcrumb__item:not(:last-child)::after {
@@ -2129,7 +2146,7 @@ img {
 }
 
 .c-breadcrumb__item a {
-    color: #747474;
+    color: #000;
     text-decoration: none;
 }
 
@@ -2329,7 +2346,7 @@ img {
 .c-menu-card__description {
     font-size: 1.4rem;
     line-height: 1.8;
-    color: #747474;
+    color: #000;
     margin-bottom: 1.5rem;
 }
 
