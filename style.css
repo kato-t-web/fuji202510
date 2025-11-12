@@ -2793,6 +2793,7 @@ img {
     .c-menu-grid {
         width: 35.4rem;
         margin: 0 auto;
+        column-gap: 0;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
     }
