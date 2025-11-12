@@ -2785,7 +2785,7 @@ img {
         width: 35.4rem;
         margin: 0 auto;
         grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
+        justify-content: space-between;
     }
 
     .c-menu-grid--hidden.is-open {
