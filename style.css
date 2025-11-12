@@ -2613,6 +2613,15 @@ img {
     opacity: 1;
 }
 
+/* Responsive Utility Classes */
+.sp-only {
+    display: none;
+}
+
+.pc-only {
+    display: block;
+}
+
 /* ==========================================================================
    Responsive Design (Mobile)
    ========================================================================== */
@@ -3135,5 +3144,14 @@ img {
     .l-footer__copyright{
         bottom: 2rem;
         font-size: 1.4rem;
+    }
+
+    /* Responsive Utility Classes */
+    .sp-only {
+        display: block;
+    }
+
+    .pc-only {
+        display: none;
     }
 }
