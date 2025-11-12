@@ -1641,7 +1641,7 @@ img {
     margin: 0 0 8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
+    column-gap: 0rem;
     row-gap: 4.5rem;
 }
 
